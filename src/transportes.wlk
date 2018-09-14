@@ -44,7 +44,7 @@ object camion {
 	}
 	
 	
-	method cargaMasPeligrosa(){
+	method cargaMasPeligrosa(){ 
 		
 		return cargas.max({carga=>carga.peligrosidad()})
 		

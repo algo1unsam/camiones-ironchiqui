@@ -9,7 +9,7 @@ object deposito{
 		
 		stock.add(merca1,merca2,merca3)
 		
-	}
+	} 
 	
 	
 	method llenarCamion(camion){

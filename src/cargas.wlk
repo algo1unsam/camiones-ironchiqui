@@ -28,7 +28,7 @@ object knightRider {
 		var property cantLadrillos = 1
 		var pesoladrillo= 2
 		
-		
+		 
 		method peso(){
 			
 			return cantLadrillos * pesoladrillo
