@@ -1,3 +1,6 @@
+import transportes.*
+
+
 object deposito{
 	
 	var stock =[]

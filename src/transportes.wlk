@@ -1,5 +1,7 @@
 import cargas.*
 import deposito.*
+import rutas.*
+
 
 object camion {
 	
@@ -26,7 +28,7 @@ object camion {
 	
 	method cargaActual(){
 		
-		return cargas.sum()
+		return cargas.sum({carga=>carga.peso()})
 	}
 	
 	method cargaDisponible(){
@@ -46,5 +48,10 @@ object camion {
 		
 		return cargas.max({carga=>carga.peligrosidad()})
 		
+	}
+	
+	method puedeCircularPor(ruta){
+		
+		return (cargas.all({carga=>carga.peligrosidad() <= ruta.peligrosidadPermitida()}))
 	}
 }
