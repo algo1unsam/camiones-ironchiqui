@@ -8,11 +8,10 @@ object camion {
 	var cargas =[]
 	var property cargaMax = 2000
 	
-	method cargarCamionCon(carga){
+	method cargarCon(carga){
 		
-		if(self.cargaDisponible()>= carga )
-		
-		cargas.add(carga)
+		if(self.cargaDisponible()>= carga)
+			cargas.add(carga)
 		
 	}
 	
@@ -54,4 +53,23 @@ object camion {
 		
 		return (cargas.all({carga=>carga.peligrosidad() <= ruta.peligrosidadPermitida()}))
 	}
+}
+
+
+object motoneta{
+	
+	var property cargaMax =100
+	var cargas= []
+	var peligrosidadPermitida= 5
+		
+		
+		method cargarCon(carga){
+			
+			if ((carga.peligrosidad() <= peligrosidadPermitida)and (carga.peso()<=cargaMax)){
+				
+						cargas.add(carga)
+			}
+				
+		}
+	
 }

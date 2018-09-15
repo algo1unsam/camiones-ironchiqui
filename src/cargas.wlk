@@ -26,7 +26,7 @@ object knightRider {
 	
 	object paqueteLadrillos{
 		var property cantLadrillos = 1
-		var pesoladrillo= 2
+		var property pesoladrillo= 2
 		
 		 
 		method peso(){
@@ -39,4 +39,13 @@ object knightRider {
 			
 			return 2
 		}
+	}
+	
+	
+	object contenedor{
+		
+		var property cargas= []
+		
+		
+		
 	}

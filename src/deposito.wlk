@@ -12,8 +12,8 @@ object deposito{
 	} 
 	
 	
-	method llenarCamion(camion){
+	method llenarTransporte(transporte){
 		
-		stock.forEach({cosa=>camion.cargarCamionCon(cosa)})
+		stock.forEach({cosa=>transporte.cargarCon(cosa)})
 	}
 }
