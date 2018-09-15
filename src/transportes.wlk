@@ -32,7 +32,7 @@ object camion {
 	
 	method cargaDisponible(){
 		
-		return cargaMax - cargas.sum()
+		return cargaMax - cargas.sum({carga=>carga.peso()})
 		
 	}
 	
