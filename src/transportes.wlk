@@ -2,6 +2,7 @@ import cargas.*
 import deposito.*
 import rutas.*
 
+// TODO faltan los tests
 
 object camion {
 	
@@ -12,6 +13,7 @@ object camion {
 		
 		if(self.cargaDisponible()>= carga)
 			cargas.add(carga)
+			// TODO después de agregarlo al cambión hay que sacarlo del depósito
 		
 	}
 	
